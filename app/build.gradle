@@ -8,9 +8,11 @@ android {
     compileSdk 33
 
     defaultConfig {
+
+        
         applicationId "app.story.mystoryappneww"
-       buildConfigField("String", "KEY", '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWp1cHlGQWpjS21EWlVwR3EiLCJpYXQiOjE2ODI1MDc5MzJ9.rxFyaGcGe3Cj2ZQ_bFzbuhzqZWjJ6nI4io7WMCtIekg"')
-        buildConfigField("String", "BASE_URL", '"https://story-api.dicoding.dev/v1/"')
+       buildConfigField("String", "KEY", "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWp1cHlGQWpjS21EWlVwR3EiLCJpYXQiOjE2ODI1MDc5MzJ9.rxFyaGcGe3Cj2ZQ_bFzbuhzqZWjJ6nI4io7WMCtIekg\"")
+        buildConfigField("String", "BASE_URL", "\"https://story-api.dicoding.dev/v1/\"")
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -45,7 +47,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.test.ext:junit-ktx:1.1.5'
-    implementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.13.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

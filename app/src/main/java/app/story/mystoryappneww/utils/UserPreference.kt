@@ -2,12 +2,13 @@ package app.story.mystoryappneww.utils
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
+import app.story.mystoryappneww.dataclass.LoginResult
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import java.util.prefs.Preferences
 
-class UserPreference private constructor(private val dataStore: DataStore<Preferences>) {
+class UserPreference private constructor(private val dataStore: DataStore<androidx.datastore.preferences.core.Preferences>) {
 
     fun getUser(): Flow<LoginResult> {
         return dataStore.data.map { preferences ->
